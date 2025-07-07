@@ -3,13 +3,13 @@ from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import QTranslator
 from PyQt6.uic import loadUi
 import os,subprocess,pkrpy,upkrpy
-#otohime.fuurin.depm
+
 class rpa(QMainWindow):
     def __init__(self):
         super().__init__()
         loadUi("./pak_ui.ui", self)
         self.setWindowTitle("renpy解封包")
-        #self.setWindowIcon(QIcon("./depm.png"))
+        #self.setWindowIcon(QIcon(""))
         self.setFixedSize(800,690)
 
         self.cho_will_dir.clicked.connect(self.wait_dir1)
@@ -24,7 +24,7 @@ class rpa(QMainWindow):
 
     def wait_dir1(self):
         self.will_pk_dir.setText(QFileDialog.getExistingDirectory(self, "选择待封包的文件夹", "/"))
-    def wait_dir2(self):   # 导入待打包的文件夹
+    def wait_dir2(self):
         self.put_rpa_dir.setText(QFileDialog.getExistingDirectory(self, "选择封包导出目录", "/"))
     def op_out1(self):
         if not self.put_rpa_dir.text():
