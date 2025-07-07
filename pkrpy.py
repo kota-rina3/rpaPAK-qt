@@ -6,6 +6,7 @@ from pickle import dumps, HIGHEST_PROTOCOL
 class Archive:
     """
     Creates a RPA archive from files in a directory.
+    创建rpa封包
     """
     def __init__(self, filename):
         self.f = open(filename, "wb")
@@ -55,11 +56,11 @@ class Archive:
 def archive(output_dir, folder_dir, pack_name):
     """
     Creates a RPA archive from a folder.
-    
+    创建rpa封包
     Parameters:
-    output_dir  - Directory to save the RPA file
-    folder_dir  - Directory containing files to archive
-    pack_name   - Name of the output archive (without extension)
+    output_dir  - Directory to save the RPA file  保存rpa封包路径
+    folder_dir  - Directory containing files to archive 待封包文件夹
+    pack_name   - Name of the output archive (without extension) 给封包命名
     """
     # Create output path
     output_path = os.path.join(output_dir, f"{pack_name}.rpa")
@@ -68,7 +69,6 @@ def archive(output_dir, folder_dir, pack_name):
     arch = Archive(output_path)
     
     try:
-        # Walk through directory and add all files
         for root, _, files in os.walk(folder_dir):
             for file in files:
                 file_path = os.path.join(root, file)
