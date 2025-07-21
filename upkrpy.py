@@ -19,7 +19,8 @@ def unpack_rpa(input_file, output_dir):
         >>> if success:
         >>>     print(f'成功提取了 {count} 个文件')
     """
-    os.makedirs(output_dir)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
     
     with open(input_file, "rb") as f:
         # 读取文件头
