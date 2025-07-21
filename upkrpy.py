@@ -8,11 +8,11 @@ def unpack_rpa(input_file, output_dir):
     解包 RPA 存档文件
     
     Args:
-        input_file: RPA 文件路径
-        output_dir: 输出目录路径
+        input_file (str): RPA 文件路径
+        output_dir (str): 输出目录路径
     
     Returns:
-        tuple: 成功标志, 提取的文件数
+        tuple: (成功标志, 提取的文件数)
         
     Example:
         >>> success, count = unpack_rpa('game.rpa', 'extracted/')
