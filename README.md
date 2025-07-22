@@ -2,6 +2,8 @@
 
 rpa解封包工具qt版，支持解包\封包renpy的.rpa文件
 
+![GitHub watchers](https://img.shields.io/github/watchers/kota-rina3/rpaPAK-qt)   ![GitHub License](https://img.shields.io/github/license/kota-rina3/rpaPAK-qt)   ![GitHub Release](https://img.shields.io/github/v/release/kota-rina3/rpaPAK-qt)   
+
 ------------
 
 ### 编译
