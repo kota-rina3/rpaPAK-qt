@@ -60,6 +60,8 @@ def archive(output_dir, folder_dir, pack_name):
     output_dir  - Directory to save the RPA file
     folder_dir  - Directory containing files to archive
     pack_name   - Name of the output archive (without extension)
+
+    注: 打包前，请将待封包文件夹放进空文件夹。打包时，工具只对待封包文件夹进行操作。
     """
     # Create output path
     output_path = os.path.join(output_dir, f"{pack_name}.rpa")
