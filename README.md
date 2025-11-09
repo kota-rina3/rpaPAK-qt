@@ -23,7 +23,7 @@ rpa解封包工具qt版，支持解包\封包renpy的.rpa文件
 
 然后在项目根目录下输入编译命令
 
-`nuitka --onefile --standalone --windows-console-mode=disable --show-progress --lto=yes --jobs=4 --enable-plugins=pyqt6 --include-data-file=./pak_ui.ui=./pak_ui.ui --include-data-file=./chs_patch.qm=./chs_patch.qm rpaPAK-qt.py`
+`nuitka --standalone --onefile --windows-console-mode=disable --show-progress --lto=yes --jobs=4 --enable-plugins=pyqt6 --include-data-file=./pak_ui.ui=./pak_ui.ui --include-data-file=./chs_menu_patch.qm=./chs_menu_patch.qm --include-data-file=./en_patch.qm=./en_patch.qm rpaPAK-qt.py`
 
 ### 有Bug 或 想添加新功能？
 
